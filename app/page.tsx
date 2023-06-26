@@ -5,7 +5,7 @@ import { Box } from "@mui/material";
 import Note from "../components/Note";
 import Grid from "@mui/material/Grid";
 
-export default function Home() {
+const Home = () => {
   const [notes, setNotes] = useState([] as any);
 
   function addNote(newNote: any) {
@@ -46,4 +46,5 @@ export default function Home() {
       </Box>
     </>
   );
-}
+};
+export default Home;

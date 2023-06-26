@@ -1,11 +1,11 @@
 "use client";
-import Fab from "@mui/material/Fab";
+
 import Zoom from "@mui/material/Zoom";
 import AddIcon from "@mui/icons-material/Add";
 import React, { useState } from "react";
 import { IconButton } from "@mui/material";
 
-function CreateArea(props: any) {
+const CreateArea = (props: any) => {
   const [isExpanded, setExpanded] = useState(false);
 
   const [note, setNote] = useState({
@@ -67,6 +67,6 @@ function CreateArea(props: any) {
       </form>
     </div>
   );
-}
+};
 
 export default CreateArea;
